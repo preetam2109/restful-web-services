@@ -1,4 +1,4 @@
-package com.preetam.restfulwebservicesv3;
+package com.preetam.restfulwebservicesv3.helloworld;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,11 +15,12 @@ public class HelloWorldController {
 	}
 	@GetMapping("/login-bean")
 	public HelloWorldBean sayHelloWorldBean() {
-		return new HelloWorldBean("Preetam","24"); 
+		throw new RuntimeException("Some Error has happend");
 	}
 	@GetMapping("/login-bean/{name}")
-	public HelloWorldBean sayHelloWorldBeanWithname(@PathVariable String name) {
-		return new HelloWorldBean("Preetam "+ name, "24" ); 
+	public HelloWorldBean sayHelloWorldBeanWithname(@PathVariable String name,@PathVariable String age) {
+//		throw new RuntimeException("Some Error has happend");
+		return new HelloWorldBean(name , age ); 
 	}
 	
 

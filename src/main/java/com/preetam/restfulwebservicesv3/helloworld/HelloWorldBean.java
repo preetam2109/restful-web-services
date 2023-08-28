@@ -1,4 +1,4 @@
-package com.preetam.restfulwebservicesv3;
+package com.preetam.restfulwebservicesv3.helloworld;
 
 public class HelloWorldBean {
 	private String Name;
