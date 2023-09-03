@@ -1,9 +1,9 @@
-package com.preetam.restfulwebservicesv3.helloworld;
+package com.preetam.restfulwebservicesv3.basic.auth;
+public class AuthenticationBean {
 
-public class HelloWorldBean {
 	private String message;
 
-	public HelloWorldBean(String message) {
+	public AuthenticationBean(String message) {
 		this.message = message;
 	}
 
@@ -19,7 +19,5 @@ public class HelloWorldBean {
 	public String toString() {
 		return String.format("HelloWorldBean [message=%s]", message);
 	}
-
-	
 
 }
